@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>País</title>
+</head>
+<body>
+    <h1>Nacionalidade</h1>
+    Digite em qual país você nasceu: <input type="text" name="pais" id="ipais">
+    <input type="button" value="verificar" onclick="calcular()">
+    <div id="res"></div>
+
+    <script>
+        function calcular(){
+        var p = document.getElementById('ipais') //cria a varialvel para poder usar em 'nac'
+        var res = document.getElementById('res') //criar a variavel para usar inner.html
+        var nac = (p.value)
+
+        if(nac == 'Brasil' || nac == 'brasil'){
+            res.innerHTML =  `<p> Você é Brasileiro!</p>`
+        }
+        else{
+            res.innerHTML = `<p> V cê é estrangeiro!</p>`
+        }
+        }
+        
+
+    </script>
+</body>
+</html>
