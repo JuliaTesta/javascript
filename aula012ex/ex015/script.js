@@ -13,7 +13,7 @@ function verificar(){
       var gênero = ''
       var img = document.createElement('img')
       img.setAttribute('id','foto')
-    }
+    
 
     if(fsex[0].checked){
         gênero = 'Homem'
@@ -57,4 +57,5 @@ function verificar(){
     res.style.textAlign = 'center'
     res.innerHTML = `Detectamos ${gênero} com ${idade} anos`
     res.appendChild(img)
+}
 }
