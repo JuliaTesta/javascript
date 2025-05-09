@@ -15,7 +15,7 @@ function calcular(){
             item.value = `tab${c}`
 
             tab.appendChild(item) //para mostrar na tela 
-            c++
+            c++ 
         }
     }
 }
