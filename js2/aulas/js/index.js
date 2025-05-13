@@ -1,0 +1,1 @@
+document.getElementById('texto').innerHTML="Meu primeiro texto JS" //inner para interação. .write mais para testes
